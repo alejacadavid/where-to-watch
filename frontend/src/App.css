@@ -1,0 +1,169 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #121212;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #ffd700; /* Subtle gold/yellow for Colombia pop */
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+input {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Grid Layout */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.movie-card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.movie-poster.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  color: #888;
+}
+
+.movie-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.movie-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.release-date {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Providers */
+.providers-section {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+.providers-section h4 {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0 0 0.8rem 0;
+}
+
+.provider-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.provider-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.not-available {
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
+
+.loading-text {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Footer Section */
+.app-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-footer p {
+  color: #888;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.tmdb-logo {
+  width: 120px;
+}
