@@ -6,7 +6,11 @@ This repository contains two main components:
 - **Backend**: A Java 17 Spring Boot app that communicates with the TMDB API.
 - **Frontend**: A React single-page application powered by Vite.
 
-## 📋 Prerequisites
+## � Preview
+
+![App Demo](docs/images/demo.gif)
+
+## �📋 Prerequisites
 
 Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/) (v16 or higher)
